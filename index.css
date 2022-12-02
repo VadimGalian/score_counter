@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EEEEEE;
+    background-color: #495482;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    }
+
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 82px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    width: 575px;
+    height: 385px;
+    background-color: #1B244A;    
+}
+
+.newgame-button{
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    color: #9AABD8;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform linear 0.1s;
+}
+
+.newgame-button:hover{
+  transform: scale(1.1);
+  background-color: #9AABD8;
+   color: #1B244A;
+    
+}
+
+.scoreboard__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+}
+
+.scoreboard__card{
+    width: 155px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+  
+  .scoreboard__buttons{
+      display: flex;
+      justify-content:space-between;
+      width: 100%
+  }
+  
+   .scoreboard__score{
+       width: 155px;
+       height: 120px;
+       border-radius: 5px;
+       display: flex;
+       justify-content:center;
+       align-items: center;
+       font-family: Cursed Timer ULiL;
+       font-size: 90px;
+       font-weight: 400;
+       background-color: #080001;
+       color: #F94F6D;
+   } 
+   
+   .point-button{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: 2px solid #9AABD8;
+       border-radius: 5px;
+       font-family: Cursed Timer ULiL;
+       font-size: 18px;
+       font-weight: 400;
+       width: 45px;
+       height: 45px;
+       cursor:pointer;
+       color: #9AABD8;
+   }
+   
+   .point-button:hover{
+       background-color: #9AABD8;
+       color: #1B244A;
+   }
+  
+  /* ===== typography ===== */
+  .scoreboard__card h4{
+      font-weight: 700;
+      font-size: 40px;  
+  }
+  
+  .highlight{
+      
+      box-shadow: yellow 0px 0px 8px;
+  }
+  
+  .winner{
+      border: 2px solid yellow;
+      box-shadow: yellow 0px 0px 8px;
+  }
